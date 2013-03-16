@@ -1,0 +1,66 @@
+Altera SOPC Builder Version 12.10 Build 177
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+# 2013.03.16 13:37:40 (*) mk_custom_sdk starting
+# 2013.03.16 13:37:40 (*) Reading project /user4/spring13/ms4543/E4840/e4840_lab3/nios_system.ptf.
+
+# 2013.03.16 13:37:40 (*) Finding all CPUs
+# 2013.03.16 13:37:40 (*) Finding all available components
+# 2013.03.16 13:37:40 (*) Reading /user4/spring13/ms4543/E4840/e4840_lab3/.sopc_builder/install.ptf
+
+# 2013.03.16 13:37:40 (*) Found 64 components
+
+# 2013.03.16 13:37:41 (*) Finding all peripherals
+
+# 2013.03.16 13:37:41 (*) Finding software components
+
+# 2013.03.16 13:37:41 (*) (Legacy SDK Generation Skipped)
+# 2013.03.16 13:37:41 (*) (All TCL Script Generation Skipped)
+# 2013.03.16 13:37:41 (*) (No Libraries Built)
+# 2013.03.16 13:37:41 (*) (Contents Generation Skipped)
+# 2013.03.16 13:37:41 (*) mk_custom_sdk finishing
+# 2013.03.16 13:37:41 (*) Starting generation for system: nios_system.
+
+.
+.
+
+# 2013.03.16 13:37:43 (*) Running Generator Program for cpu_0
+
+# 2013.03.16 13:37:44 (*) Starting Nios II generation
+# 2013.03.16 13:37:44 (*)   Checking for plaintext license.
+# 2013.03.16 13:37:46 (*)   Couldn't query license setup in Quartus directory /opt/altera/altera12.1/quartus
+# 2013.03.16 13:37:46 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2013.03.16 13:37:46 (*)   Plaintext license not found.
+# 2013.03.16 13:37:46 (*)   No license required to generate encrypted Nios II/e.
+# 2013.03.16 13:37:46 (*)   Getting CPU configuration settings
+# 2013.03.16 13:37:46 (*)   Elaborating CPU configuration settings
+# 2013.03.16 13:37:46 (*)   Creating all objects for CPU
+# 2013.03.16 13:37:48 (*)   Generating HDL from CPU objects
+# 2013.03.16 13:37:48 (*)   Creating plain-text HDL
+# 2013.03.16 13:37:54 (*) Done Nios II generation
+
+# 2013.03.16 13:37:54 (*) Running Generator Program for jtag_uart_0
+
+
+# 2013.03.16 13:37:55 (*) Making arbitration and system (top) modules.
+
+# 2013.03.16 13:37:59 (*) Generating Quartus symbol for top level: nios_system
+
+# 2013.03.16 13:37:59 (*) Generating Symbol /user4/spring13/ms4543/E4840/e4840_lab3/nios_system.bsf
+
+# 2013.03.16 13:37:59 (*) Creating command-line system-generation script: /user4/spring13/ms4543/E4840/e4840_lab3/nios_system_generation_script
+
+# 2013.03.16 13:37:59 (*) Running setup for HDL simulator: modelsim
+
+
+# 2013.03.16 13:37:59 (*) Completed generation for system: nios_system.
+# 2013.03.16 13:37:59 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : /user4/spring13/ms4543/E4840/e4840_lab3/nios_system.ptf 
+  System HDL Model : /user4/spring13/ms4543/E4840/e4840_lab3/nios_system.vhd 
+  System Generation Script : /user4/spring13/ms4543/E4840/e4840_lab3/nios_system_generation_script 
+
+# 2013.03.16 13:37:59 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.
