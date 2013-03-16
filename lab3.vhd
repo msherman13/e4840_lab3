@@ -49,5 +49,6 @@ begin
     SRAM_UB_N_from_the_sram      => SRAM_UB_N,
     SRAM_WE_N_from_the_sram      => SRAM_WE_N
     );
+	 	 
 
 end rtl;

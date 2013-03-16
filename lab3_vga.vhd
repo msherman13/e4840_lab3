@@ -175,7 +175,7 @@ end lab3_vga;
 architecture datapath of lab3_vga is
 
   signal clk25 : std_logic := '0';
-
+  
 begin
 
   process (CLOCK_50)
@@ -198,14 +198,14 @@ begin
     VGA_B => VGA_B
   );
   
-  HEX7     <= "0001001"; -- Leftmost
-  HEX6     <= "0000110";
-  HEX5     <= "1000111";
-  HEX4     <= "1000111";
-  HEX3     <= "1000000";
-  HEX2     <= (others => '1');
-  HEX1     <= (others => '1');
-  HEX0     <= (others => '1');          -- Rightmost
+  HEX7     <= "1111111"; -- Leftmost
+  HEX6     <= "1111111";
+  HEX5     <= "1111111";
+  HEX4     <= "1111111";
+  HEX3     <= "1111111";
+  HEX2     <= "1111111";
+  HEX1     <= "1111111";
+  HEX0     <= "1111111";          -- Rightmost
   LEDG     <= (others => '1');
   LEDR     <= (others => '1');
   LCD_ON   <= '1';

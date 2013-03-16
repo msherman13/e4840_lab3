@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Mar 16 16:27:58 2013
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : vga_controller
+Top-level Entity Name : lab3_vga
+Family : Cyclone II
+Total logic elements : 89
+    Total combinational functions : 61
+    Dedicated logic registers : 57
+Total registers : 57
+Total pins : 424
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

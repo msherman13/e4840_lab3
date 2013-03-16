@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Sat Mar 16 13:44:07 2013
+Sat Mar 16 15:22:49 2013
 Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
 
 
@@ -94,7 +94,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 16 13:44:07 2013     ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 16 15:22:48 2013     ;
 ; Quartus II 32-bit Version          ; 12.1 Build 177 11/07/2012 SJ Full Version ;
 ; Revision Name                      ; lab3                                      ;
 ; Top-level Entity Name              ; lab3                                      ;
@@ -661,16 +661,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab3|nios_system:nios|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|readdata[2]                                                                                                                                     ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |lab3|nios_system:nios|cpu_0:the_cpu_0|W_rf_wr_data[11]                                                                                                                                                                    ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |lab3|nios_system:nios|cpu_0:the_cpu_0|D_dst_regnum[4]                                                                                                                                                                     ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[1]                                                                                                                                   ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]                                                                                                                                      ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][0]                                                                                                                                          ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]                                                                                                                                          ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[4]                                                                                                                ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][1]                                                                                                                                   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][3]                                                                                                                                   ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[3]                                                                                                                                            ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]                                                                                                                                     ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1473,14 +1463,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------+-------+----------+---------------------------------------------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:09     ;
-; sld_hub:auto_hub ; 00:00:02     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:09     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -1489,7 +1478,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
-    Info: Processing started: Sat Mar 16 13:43:41 2013
+    Info: Processing started: Sat Mar 16 15:22:27 2013
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file lab3.vhd
@@ -1522,6 +1511,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file de2_led
     Info (12023): Found entity 1: de2_led_flasher
 Info (12021): Found 1 design units, including 1 entities, in source file leds.v
     Info (12023): Found entity 1: leds
+Info (12021): Found 2 design units, including 1 entities, in source file de2_vga_raster.vhd
+    Info (12022): Found design unit 1: de2_vga_raster-rtl
+    Info (12023): Found entity 1: de2_vga_raster
+Info (12021): Found 2 design units, including 1 entities, in source file lab3_vga.vhd
+    Info (12022): Found design unit 1: lab3_vga-datapath
+    Info (12023): Found entity 1: lab3_vga
 Info (12127): Elaborating entity "lab3" for the top level hierarchy
 Info (12128): Elaborating entity "nios_system" for hierarchy "nios_system:nios"
 Info (12128): Elaborating entity "cpu_0_jtag_debug_module_arbitrator" for hierarchy "nios_system:nios|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module"
@@ -1686,7 +1681,6 @@ Warning (12125): Using design file cpu_0_oci_test_bench.vhd, which is not specif
     Info (12022): Found design unit 1: cpu_0_oci_test_bench-europa
     Info (12023): Found entity 1: cpu_0_oci_test_bench
 Info (12128): Elaborating entity "cpu_0_oci_test_bench" for hierarchy "nios_system:nios|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_fifo:the_cpu_0_nios2_oci_fifo|cpu_0_oci_test_bench:the_cpu_0_oci_test_bench"
-Warning (12158): Entity "cpu_0_oci_test_bench" contains only dangling pins
 Info (12128): Elaborating entity "cpu_0_nios2_oci_pib" for hierarchy "nios_system:nios|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_pib:the_cpu_0_nios2_oci_pib"
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
@@ -1882,10 +1876,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[16]" is stuck at VCC
     Warning (13410): Pin "LEDR[17]" is stuck at VCC
 Info (17049): 59 registers lost all their fanouts during netlist optimizations.
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 2382 device resources after synthesis - the final resource count might be different
@@ -1894,10 +1884,10 @@ Info (21057): Implemented 2382 device resources after synthesis - the final reso
     Info (21060): Implemented 16 bidirectional pins
     Info (21061): Implemented 2207 logic cells
     Info (21064): Implemented 112 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 90 warnings
-    Info: Peak virtual memory: 394 megabytes
-    Info: Processing ended: Sat Mar 16 13:44:07 2013
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 87 warnings
+    Info: Peak virtual memory: 386 megabytes
+    Info: Processing ended: Sat Mar 16 15:22:49 2013
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:19
 
 
