@@ -135,7 +135,7 @@ entity lab3_vga is
     VGA_SYNC : out std_logic;                           -- SYNC
     VGA_R,                                              -- Red[9:0]
     VGA_G,                                              -- Green[9:0]
-    VGA_B : out unsigned(9 downto 0);                   -- Blue[9:0]
+    VGA_B : out std_logic_vector(9 downto 0);                   -- Blue[9:0]
 
     --  Ethernet Interface
     
@@ -193,9 +193,11 @@ begin
     VGA_VS => VGA_VS,
     VGA_BLANK => VGA_BLANK,
     VGA_SYNC => VGA_SYNC,
-    VGA_R => VGA_R,
-    VGA_G => VGA_G,
-    VGA_B => VGA_B
+    VGA_Rpin => VGA_R,
+    VGA_Gpin => VGA_G,
+    VGA_Bpin => VGA_B,
+	 MidpointXpin => "00111000000",
+	 MidpointYpin => "00111000000"
   );
   
   HEX7     <= "1111111"; -- Leftmost

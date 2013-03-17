@@ -1393,7 +1393,7 @@ SYSTEM nios_system
       }
       HDL_INFO 
       {
-         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/de2_sram_controller.vhd";
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/de2_sram_controller.vhd,__PROJECT_DIRECTORY__/sram.vhd";
       }
       WIZARD_SCRIPT_ARGUMENTS 
       {
@@ -1536,7 +1536,7 @@ SYSTEM nios_system
       }
       HDL_INFO 
       {
-         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/de2_led_flasher.vhd";
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/de2_led_flasher.vhd,__PROJECT_DIRECTORY__/leds.vhd";
       }
       WIZARD_SCRIPT_ARGUMENTS 
       {

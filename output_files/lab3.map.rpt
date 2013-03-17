@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Sat Mar 16 15:22:49 2013
+Sat Mar 16 20:31:06 2013
 Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
 
 
@@ -94,13 +94,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 16 15:22:48 2013     ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 16 20:31:05 2013     ;
 ; Quartus II 32-bit Version          ; 12.1 Build 177 11/07/2012 SJ Full Version ;
 ; Revision Name                      ; lab3                                      ;
 ; Top-level Entity Name              ; lab3                                      ;
 ; Family                             ; Cyclone II                                ;
-; Total logic elements               ; 2,121                                     ;
-;     Total combinational functions  ; 1,744                                     ;
+; Total logic elements               ; 2,126                                     ;
+;     Total combinational functions  ; 1,749                                     ;
 ;     Dedicated logic registers      ; 1,133                                     ;
 ; Total registers                    ; 1133                                      ;
 ; Total pins                         ; 58                                        ;
@@ -221,9 +221,9 @@ applicable agreement for further details.
 ; lab3.vhd                            ; yes             ; User VHDL File                         ; /home/user4/spring13/ms4543/E4840/e4840_lab3/lab3.vhd                            ;         ;
 ; nios_system.vhd                     ; yes             ; User VHDL File                         ; /home/user4/spring13/ms4543/E4840/e4840_lab3/nios_system.vhd                     ;         ;
 ; de2_sram_controller.vhd             ; yes             ; User VHDL File                         ; /home/user4/spring13/ms4543/E4840/e4840_lab3/de2_sram_controller.vhd             ;         ;
-; sram.v                              ; yes             ; User Verilog HDL File                  ; /home/user4/spring13/ms4543/E4840/e4840_lab3/sram.v                              ;         ;
+; sram.vhd                            ; yes             ; User VHDL File                         ; /home/user4/spring13/ms4543/E4840/e4840_lab3/sram.vhd                            ;         ;
 ; de2_led_flasher.vhd                 ; yes             ; User VHDL File                         ; /home/user4/spring13/ms4543/E4840/e4840_lab3/de2_led_flasher.vhd                 ;         ;
-; leds.v                              ; yes             ; User Verilog HDL File                  ; /home/user4/spring13/ms4543/E4840/e4840_lab3/leds.v                              ;         ;
+; leds.vhd                            ; yes             ; User VHDL File                         ; /home/user4/spring13/ms4543/E4840/e4840_lab3/leds.vhd                            ;         ;
 ; cpu_0.vhd                           ; yes             ; Auto-Found VHDL File                   ; /home/user4/spring13/ms4543/E4840/e4840_lab3/cpu_0.vhd                           ;         ;
 ; cpu_0_test_bench.vhd                ; yes             ; Auto-Found VHDL File                   ; /home/user4/spring13/ms4543/E4840/e4840_lab3/cpu_0_test_bench.vhd                ;         ;
 ; altsyncram.tdf                      ; yes             ; Megafunction                           ; /opt/altera/altera12.1/quartus/libraries/megafunctions/altsyncram.tdf            ;         ;
@@ -274,16 +274,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 2,121 ;
+; Estimated Total logic elements              ; 2,126 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1744  ;
+; Total combinational functions               ; 1749  ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 903   ;
-;     -- 3 input functions                    ; 567   ;
-;     -- <=2 input functions                  ; 274   ;
+;     -- 3 input functions                    ; 563   ;
+;     -- <=2 input functions                  ; 283   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1554  ;
+;     -- normal mode                          ; 1559  ;
 ;     -- arithmetic mode                      ; 190   ;
 ;                                             ;       ;
 ; Total registers                             ; 1133  ;
@@ -294,8 +294,8 @@ applicable agreement for further details.
 ; Total memory bits                           ; 11264 ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out                             ; 1063  ;
-; Total fan-out                               ; 11705 ;
-; Average fan-out                             ; 3.84  ;
+; Total fan-out                               ; 11711 ;
+; Average fan-out                             ; 3.83  ;
 +---------------------------------------------+-------+
 
 
@@ -304,7 +304,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                   ; Library Name ;
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |lab3                                                                                           ; 1744 (23)         ; 1133 (17)    ; 11264       ; 0            ; 0       ; 0         ; 58   ; 0            ; |lab3                                                                                                                                                                                                                                                                 ;              ;
+; |lab3                                                                                           ; 1749 (23)         ; 1133 (17)    ; 11264       ; 0            ; 0       ; 0         ; 58   ; 0            ; |lab3                                                                                                                                                                                                                                                                 ;              ;
 ;    |nios_system:nios|                                                                           ; 1561 (1)          ; 1019 (0)     ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|nios_system:nios                                                                                                                                                                                                                                                ;              ;
 ;       |cpu_0:the_cpu_0|                                                                         ; 892 (663)         ; 489 (307)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|nios_system:nios|cpu_0:the_cpu_0                                                                                                                                                                                                                                ;              ;
 ;          |cpu_0_nios2_oci:the_cpu_0_nios2_oci|                                                  ; 229 (33)          ; 181 (0)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|nios_system:nios|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci                                                                                                                                                                                            ;              ;
@@ -361,9 +361,9 @@ applicable agreement for further details.
 ;       |leds_avalon_slave_0_arbitrator:the_leds_avalon_slave_0|                                  ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|nios_system:nios|leds_avalon_slave_0_arbitrator:the_leds_avalon_slave_0                                                                                                                                                                                         ;              ;
 ;       |nios_system_reset_clk_0_domain_synch_module:nios_system_reset_clk_0_domain_synch|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|nios_system:nios|nios_system_reset_clk_0_domain_synch_module:nios_system_reset_clk_0_domain_synch                                                                                                                                                               ;              ;
 ;       |sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|                                  ; 55 (55)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|nios_system:nios|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0                                                                                                                                                                                         ;              ;
-;    |sld_hub:auto_hub|                                                                           ; 160 (1)           ; 97 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|sld_hub:auto_hub                                                                                                                                                                                                                                                ;              ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                            ; 159 (118)         ; 97 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                   ;              ;
-;          |sld_rom_sr:hub_info_reg|                                                              ; 24 (24)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                           ;              ;
+;    |sld_hub:auto_hub|                                                                           ; 165 (1)           ; 97 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|sld_hub:auto_hub                                                                                                                                                                                                                                                ;              ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                            ; 164 (124)         ; 97 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                   ;              ;
+;          |sld_rom_sr:hub_info_reg|                                                              ; 23 (23)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                           ;              ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                            ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                         ;              ;
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -661,6 +661,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab3|nios_system:nios|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|readdata[2]                                                                                                                                     ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |lab3|nios_system:nios|cpu_0:the_cpu_0|W_rf_wr_data[11]                                                                                                                                                                    ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |lab3|nios_system:nios|cpu_0:the_cpu_0|D_dst_regnum[4]                                                                                                                                                                     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[1]                                                                                                                                   ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]                                                                                                                                      ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][0]                                                                                                                                          ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]                                                                                                                                          ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[4]                                                                                                                ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][1]                                                                                                                                   ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][3]                                                                                                                                   ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[3]                                                                                                                                            ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]                                                                                                                                     ;
+; 28:1               ; 4 bits    ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |lab3|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1463,13 +1473,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------+-------+----------+---------------------------------------------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:09     ;
-+----------------+--------------+
++---------------------------------+
+; Elapsed Time Per Partition      ;
++------------------+--------------+
+; Partition Name   ; Elapsed Time ;
++------------------+--------------+
+; Top              ; 00:00:09     ;
+; sld_hub:auto_hub ; 00:00:03     ;
++------------------+--------------+
 
 
 +-------------------------------+
@@ -1478,7 +1489,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
-    Info: Processing started: Sat Mar 16 15:22:27 2013
+    Info: Processing started: Sat Mar 16 20:30:41 2013
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file lab3.vhd
@@ -1504,19 +1515,15 @@ Info (12021): Found 16 design units, including 8 entities, in source file nios_s
 Info (12021): Found 2 design units, including 1 entities, in source file de2_sram_controller.vhd
     Info (12022): Found design unit 1: de2_sram_controller-dp
     Info (12023): Found entity 1: de2_sram_controller
-Info (12021): Found 1 design units, including 1 entities, in source file sram.v
+Info (12021): Found 2 design units, including 1 entities, in source file sram.vhd
+    Info (12022): Found design unit 1: sram-rtl
     Info (12023): Found entity 1: sram
 Info (12021): Found 2 design units, including 1 entities, in source file de2_led_flasher.vhd
     Info (12022): Found design unit 1: de2_led_flasher-rtl
     Info (12023): Found entity 1: de2_led_flasher
-Info (12021): Found 1 design units, including 1 entities, in source file leds.v
+Info (12021): Found 2 design units, including 1 entities, in source file leds.vhd
+    Info (12022): Found design unit 1: leds-rtl
     Info (12023): Found entity 1: leds
-Info (12021): Found 2 design units, including 1 entities, in source file de2_vga_raster.vhd
-    Info (12022): Found design unit 1: de2_vga_raster-rtl
-    Info (12023): Found entity 1: de2_vga_raster
-Info (12021): Found 2 design units, including 1 entities, in source file lab3_vga.vhd
-    Info (12022): Found design unit 1: lab3_vga-datapath
-    Info (12023): Found entity 1: lab3_vga
 Info (12127): Elaborating entity "lab3" for the top level hierarchy
 Info (12128): Elaborating entity "nios_system" for hierarchy "nios_system:nios"
 Info (12128): Elaborating entity "cpu_0_jtag_debug_module_arbitrator" for hierarchy "nios_system:nios|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module"
@@ -1827,7 +1834,7 @@ Warning (10541): VHDL Signal Declaration warning at nios_system.vhd(1342): used 
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(350): used initial value expression for variable "arg_copy" because variable was never assigned a value
 Warning (10542): VHDL Variable Declaration warning at altera_europa_support_lib.vhd(354): used initial value expression for variable "arg_length" because variable was never assigned a value
 Info (12128): Elaborating entity "sram" for hierarchy "nios_system:nios|sram:the_sram"
-Info (12128): Elaborating entity "de2_sram_controller" for hierarchy "nios_system:nios|sram:the_sram|de2_sram_controller:sram_inst"
+Info (12128): Elaborating entity "de2_sram_controller" for hierarchy "nios_system:nios|sram:the_sram|de2_sram_controller:sram"
 Info (12128): Elaborating entity "nios_system_reset_clk_0_domain_synch_module" for hierarchy "nios_system:nios|nios_system_reset_clk_0_domain_synch_module:nios_system_reset_clk_0_domain_synch"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
@@ -1876,18 +1883,22 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[16]" is stuck at VCC
     Warning (13410): Pin "LEDR[17]" is stuck at VCC
 Info (17049): 59 registers lost all their fanouts during netlist optimizations.
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2382 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2387 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 42 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 2207 logic cells
+    Info (21061): Implemented 2212 logic cells
     Info (21064): Implemented 112 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 87 warnings
-    Info: Peak virtual memory: 386 megabytes
-    Info: Processing ended: Sat Mar 16 15:22:49 2013
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 390 megabytes
+    Info: Processing ended: Sat Mar 16 20:31:06 2013
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:22
 
 

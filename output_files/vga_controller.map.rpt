@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_controller
-Sat Mar 16 16:27:58 2013
+Sat Mar 16 20:24:21 2013
 Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
 
 
@@ -13,10 +13,14 @@ Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "de2_vga_raster:V1"
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Parameter Settings for Inferred Entity Instance: de2_vga_raster:V1|lpm_mult:Mult1
+ 11. Parameter Settings for Inferred Entity Instance: de2_vga_raster:V1|lpm_mult:Mult0
+ 12. lpm_mult Parameter Settings by Entity Instance
+ 13. Port Connectivity Checks: "de2_vga_raster:V1"
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -42,19 +46,19 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Mar 16 16:27:58 2013     ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 16 20:24:21 2013     ;
 ; Quartus II 32-bit Version          ; 12.1 Build 177 11/07/2012 SJ Full Version ;
 ; Revision Name                      ; vga_controller                            ;
 ; Top-level Entity Name              ; lab3_vga                                  ;
 ; Family                             ; Cyclone II                                ;
-; Total logic elements               ; 89                                        ;
-;     Total combinational functions  ; 61                                        ;
-;     Dedicated logic registers      ; 57                                        ;
-; Total registers                    ; 57                                        ;
+; Total logic elements               ; 119                                       ;
+;     Total combinational functions  ; 90                                        ;
+;     Dedicated logic registers      ; 58                                        ;
+; Total registers                    ; 58                                        ;
 ; Total pins                         ; 424                                       ;
 ; Total virtual pins                 ; 0                                         ;
 ; Total memory bits                  ; 0                                         ;
-; Embedded Multiplier 9-bit elements ; 0                                         ;
+; Embedded Multiplier 9-bit elements ; 4                                         ;
 ; Total PLLs                         ; 0                                         ;
 +------------------------------------+-------------------------------------------+
 
@@ -161,14 +165,21 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; de2_vga_raster.vhd               ; yes             ; User VHDL File  ; /home/user4/spring13/ms4543/E4840/e4840_lab3/de2_vga_raster.vhd ;         ;
-; lab3_vga.vhd                     ; yes             ; User VHDL File  ; /home/user4/spring13/ms4543/E4840/e4840_lab3/lab3_vga.vhd       ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+; de2_vga_raster.vhd               ; yes             ; User VHDL File               ; /home/user4/spring13/ms4543/E4840/e4840_lab3/de2_vga_raster.vhd        ;         ;
+; lab3_vga.vhd                     ; yes             ; User VHDL File               ; /home/user4/spring13/ms4543/E4840/e4840_lab3/lab3_vga.vhd              ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; /opt/altera/altera12.1/quartus/libraries/megafunctions/lpm_mult.tdf    ;         ;
+; aglobal121.inc                   ; yes             ; Megafunction                 ; /opt/altera/altera12.1/quartus/libraries/megafunctions/aglobal121.inc  ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; /opt/altera/altera12.1/quartus/libraries/megafunctions/lpm_add_sub.inc ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; /opt/altera/altera12.1/quartus/libraries/megafunctions/multcore.inc    ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; /opt/altera/altera12.1/quartus/libraries/megafunctions/bypassff.inc    ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; /opt/altera/altera12.1/quartus/libraries/megafunctions/altshift.inc    ;         ;
+; db/mult_71t.tdf                  ; yes             ; Auto-Generated Megafunction  ; /home/user4/spring13/ms4543/E4840/e4840_lab3/db/mult_71t.tdf           ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -176,39 +187,61 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 89    ;
+; Estimated Total logic elements              ; 119   ;
 ;                                             ;       ;
-; Total combinational functions               ; 61    ;
+; Total combinational functions               ; 90    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 25    ;
-;     -- 3 input functions                    ; 6     ;
-;     -- <=2 input functions                  ; 30    ;
+;     -- 4 input functions                    ; 23    ;
+;     -- 3 input functions                    ; 29    ;
+;     -- <=2 input functions                  ; 38    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 43    ;
-;     -- arithmetic mode                      ; 18    ;
+;     -- normal mode                          ; 50    ;
+;     -- arithmetic mode                      ; 40    ;
 ;                                             ;       ;
-; Total registers                             ; 57    ;
-;     -- Dedicated logic registers            ; 57    ;
+; Total registers                             ; 58    ;
+;     -- Dedicated logic registers            ; 58    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 424   ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out                             ; 58    ;
-; Total fan-out                               ; 336   ;
-; Average fan-out                             ; 0.62  ;
+; Embedded Multiplier 9-bit elements          ; 4     ;
+; Maximum fan-out                             ; 59    ;
+; Total fan-out                               ; 437   ;
+; Average fan-out                             ; 0.76  ;
 +---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; |lab3_vga                  ; 61 (1)            ; 57 (1)       ; 0           ; 0            ; 0       ; 0         ; 424  ; 0            ; |lab3_vga                   ;              ;
-;    |de2_vga_raster:V1|     ; 60 (60)           ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab3_vga|de2_vga_raster:V1 ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Library Name ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
+; |lab3_vga                          ; 90 (1)            ; 58 (1)       ; 0           ; 4            ; 0       ; 2         ; 424  ; 0            ; |lab3_vga                                                          ;              ;
+;    |de2_vga_raster:V1|             ; 89 (89)           ; 57 (57)      ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |lab3_vga|de2_vga_raster:V1                                        ;              ;
+;       |lpm_mult:Mult0|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |lab3_vga|de2_vga_raster:V1|lpm_mult:Mult0                         ;              ;
+;          |mult_71t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |lab3_vga|de2_vga_raster:V1|lpm_mult:Mult0|mult_71t:auto_generated ;              ;
+;       |lpm_mult:Mult1|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |lab3_vga|de2_vga_raster:V1|lpm_mult:Mult1                         ;              ;
+;          |mult_71t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |lab3_vga|de2_vga_raster:V1|lpm_mult:Mult1|mult_71t:auto_generated ;              ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 2           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 4           ;
+; Signed Embedded Multipliers           ; 2           ;
+; Unsigned Embedded Multipliers         ; 0           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
 +------------------------------------------------------+
@@ -216,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 57    ;
+; Total registers                              ; 58    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -226,13 +259,120 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "de2_vga_raster:V1" ;
-+-------+-------+----------+--------------------+
-; Port  ; Type  ; Severity ; Details            ;
-+-------+-------+----------+--------------------+
-; reset ; Input ; Info     ; Stuck at GND       ;
-+-------+-------+----------+--------------------+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: de2_vga_raster:V1|lpm_mult:Mult1 ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 11         ; Untyped             ;
+; LPM_WIDTHB                                     ; 11         ; Untyped             ;
+; LPM_WIDTHP                                     ; 22         ; Untyped             ;
+; LPM_WIDTHR                                     ; 22         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_71t   ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: de2_vga_raster:V1|lpm_mult:Mult0 ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 11         ; Untyped             ;
+; LPM_WIDTHB                                     ; 11         ; Untyped             ;
+; LPM_WIDTHP                                     ; 22         ; Untyped             ;
+; LPM_WIDTHR                                     ; 22         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_71t   ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                           ;
++---------------------------------------+----------------------------------+
+; Name                                  ; Value                            ;
++---------------------------------------+----------------------------------+
+; Number of entity instances            ; 2                                ;
+; Entity Instance                       ; de2_vga_raster:V1|lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 11                               ;
+;     -- LPM_WIDTHB                     ; 11                               ;
+;     -- LPM_WIDTHP                     ; 22                               ;
+;     -- LPM_REPRESENTATION             ; SIGNED                           ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                               ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                               ;
+;     -- USE_EAB                        ; OFF                              ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                             ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                               ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                               ;
+; Entity Instance                       ; de2_vga_raster:V1|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 11                               ;
+;     -- LPM_WIDTHB                     ; 11                               ;
+;     -- LPM_WIDTHP                     ; 22                               ;
+;     -- LPM_REPRESENTATION             ; SIGNED                           ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                               ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                               ;
+;     -- USE_EAB                        ; OFF                              ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                             ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                               ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                               ;
++---------------------------------------+----------------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "de2_vga_raster:V1"         ;
++---------------------+-------+----------+--------------+
+; Port                ; Type  ; Severity ; Details      ;
++---------------------+-------+----------+--------------+
+; reset               ; Input ; Info     ; Stuck at GND ;
+; midpointxpin[8..6]  ; Input ; Info     ; Stuck at VCC ;
+; midpointxpin[10..9] ; Input ; Info     ; Stuck at GND ;
+; midpointxpin[5..0]  ; Input ; Info     ; Stuck at GND ;
+; midpointypin[8..6]  ; Input ; Info     ; Stuck at VCC ;
+; midpointypin[10..9] ; Input ; Info     ; Stuck at GND ;
+; midpointypin[5..0]  ; Input ; Info     ; Stuck at GND ;
++---------------------+-------+----------+--------------+
 
 
 +-------------------------------+
@@ -240,7 +380,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -250,7 +390,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
-    Info: Processing started: Sat Mar 16 16:27:50 2013
+    Info: Processing started: Sat Mar 16 20:24:13 2013
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_controller -c vga_controller
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file de2_vga_raster.vhd
@@ -261,6 +401,25 @@ Info (12021): Found 2 design units, including 1 entities, in source file lab3_vg
     Info (12023): Found entity 1: lab3_vga
 Info (12127): Elaborating entity "lab3_vga" for the top level hierarchy
 Info (12128): Elaborating entity "de2_vga_raster" for hierarchy "de2_vga_raster:V1"
+Warning (10492): VHDL Process Statement warning at de2_vga_raster.vhd(229): signal "VGA_R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at de2_vga_raster.vhd(230): signal "VGA_G" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at de2_vga_raster.vhd(231): signal "VGA_B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "de2_vga_raster:V1|Mult1"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "de2_vga_raster:V1|Mult0"
+Info (12130): Elaborated megafunction instantiation "de2_vga_raster:V1|lpm_mult:Mult1"
+Info (12133): Instantiated megafunction "de2_vga_raster:V1|lpm_mult:Mult1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "11"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "22"
+    Info (12134): Parameter "LPM_WIDTHR" = "22"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_71t.tdf
+    Info (12023): Found entity 1: mult_71t
 Warning (13032): The following tri-state nodes are fed by constants
     Warning (13033): The pin "SD_DAT3" is fed by VCC
     Warning (13033): The pin "SD_CMD" is fed by VCC
@@ -518,14 +677,15 @@ Warning (21074): Design contains 47 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "TD_DATA[7]"
     Warning (15610): No output dependent on input pin "TD_HS"
     Warning (15610): No output dependent on input pin "TD_VS"
-Info (21057): Implemented 515 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 548 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 48 input pins
     Info (21059): Implemented 217 output pins
     Info (21060): Implemented 159 bidirectional pins
-    Info (21061): Implemented 91 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 255 warnings
+    Info (21061): Implemented 120 logic cells
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 258 warnings
     Info: Peak virtual memory: 365 megabytes
-    Info: Processing ended: Sat Mar 16 16:27:58 2013
+    Info: Processing ended: Sat Mar 16 20:24:21 2013
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 

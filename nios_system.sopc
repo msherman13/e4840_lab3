@@ -71,6 +71,9 @@
          type = "int";
       }
    }
+   element nios_system
+   {
+   }
    element sram
    {
       datum _sortIndex
@@ -91,10 +94,10 @@
  <parameter name="globalResetBus" value="true" />
  <parameter name="hdlLanguage" value="VHDL" />
  <parameter name="maxAdditionalLatency" value="0" />
- <parameter name="projectName" value="lab3" />
+ <parameter name="projectName" value="vga_controller.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="-15630790964" />
- <parameter name="timeStamp" value="1363455288748" />
+ <parameter name="systemHash" value="-14158441166" />
+ <parameter name="timeStamp" value="1363479961755" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="12.1" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
@@ -205,7 +208,9 @@
   <parameter name="breakOffset" value="32" />
  </module>
  <module kind="de2_sram_controller" version="1.0" enabled="1" name="sram" />
- <module kind="de2_led_flasher" version="1.0" enabled="1" name="leds" />
+ <module kind="de2_led_flasher" version="1.0" enabled="1" name="leds">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+ </module>
  <module
    kind="altera_avalon_jtag_uart"
    version="12.1"

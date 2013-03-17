@@ -931,257 +931,271 @@
      <Role>clk</Role>
      <Width>1</Width>
     </SOPCPort>
+   </SOPCInterface>
+   <SOPCInterface>
+    <C>185</C>
+    <InterfaceType>reset_end</InterfaceType>
+    <SOPCInterfaceParameter>
+     <C>186</C>
+     <Name>associatedClock</Name>
+     <Value>clock</Value>
+    </SOPCInterfaceParameter>
+    <SOPCInterfaceParameter>
+     <C>187</C>
+     <Name>synchronousEdges</Name>
+     <Value>DEASSERT</Value>
+    </SOPCInterfaceParameter>
     <SOPCPort>
-     <C>185</C>
+     <C>188</C>
      <Direction>Input</Direction>
      <Role>reset_n</Role>
      <Width>1</Width>
     </SOPCPort>
    </SOPCInterface>
    <SOPCInterface>
-    <C>186</C>
+    <C>189</C>
     <InterfaceType>reset_end</InterfaceType>
     <SOPCInterfaceParameter>
-     <C>187</C>
+     <C>190</C>
      <Name>associatedClock</Name>
      <Value>clock</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>188</C>
+     <C>191</C>
      <Name>synchronousEdges</Name>
      <Value>DEASSERT</Value>
     </SOPCInterfaceParameter>
    </SOPCInterface>
    <SOPCInterface>
-    <C>189</C>
+    <C>192</C>
     <InterfaceType>avalon_end</InterfaceType>
     <SOPCInterfaceParameter>
-     <C>190</C>
+     <C>193</C>
      <Name>addressAlignment</Name>
      <Value>DYNAMIC</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>191</C>
+     <C>194</C>
      <Name>addressGroup</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>192</C>
+     <C>195</C>
      <Name>addressSpan</Name>
      <Value>64</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>193</C>
+     <C>196</C>
      <Name>addressUnits</Name>
      <Value>WORDS</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>194</C>
+     <C>197</C>
      <Name>alwaysBurstMaxBurst</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>195</C>
+     <C>198</C>
      <Name>associatedClock</Name>
      <Value>clock</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>196</C>
+     <C>199</C>
      <Name>associatedReset</Name>
-     <Value></Value>
+     <Value>reset</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>197</C>
+     <C>200</C>
      <Name>bitsPerSymbol</Name>
      <Value>8</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>198</C>
+     <C>201</C>
      <Name>bridgesToMaster</Name>
      <Value></Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>199</C>
+     <C>202</C>
      <Name>burstOnBurstBoundariesOnly</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>200</C>
+     <C>203</C>
      <Name>burstcountUnits</Name>
      <Value>WORDS</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>201</C>
+     <C>204</C>
      <Name>constantBurstBehavior</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>202</C>
+     <C>205</C>
      <Name>explicitAddressSpan</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>203</C>
+     <C>206</C>
      <Name>holdTime</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>204</C>
+     <C>207</C>
      <Name>interleaveBursts</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>205</C>
+     <C>208</C>
      <Name>isBigEndian</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>206</C>
+     <C>209</C>
      <Name>isFlash</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>207</C>
+     <C>210</C>
      <Name>isMemoryDevice</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>208</C>
+     <C>211</C>
      <Name>isNonVolatileStorage</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>209</C>
+     <C>212</C>
      <Name>linewrapBursts</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>210</C>
+     <C>213</C>
      <Name>maximumPendingReadTransactions</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>211</C>
+     <C>214</C>
      <Name>minimumUninterruptedRunLength</Name>
      <Value>1</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>212</C>
+     <C>215</C>
      <Name>printableDevice</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>213</C>
+     <C>216</C>
      <Name>readLatency</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>214</C>
+     <C>217</C>
      <Name>readWaitStates</Name>
      <Value>1</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>215</C>
+     <C>218</C>
      <Name>readWaitTime</Name>
      <Value>1</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>216</C>
+     <C>219</C>
      <Name>registerIncomingSignals</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>217</C>
+     <C>220</C>
      <Name>registerOutgoingSignals</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>218</C>
+     <C>221</C>
      <Name>setupTime</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>219</C>
+     <C>222</C>
      <Name>timingUnits</Name>
      <Value>Cycles</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>220</C>
+     <C>223</C>
      <Name>transparentBridge</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>221</C>
+     <C>224</C>
      <Name>wellBehavedWaitrequest</Name>
      <Value>false</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>222</C>
+     <C>225</C>
      <Name>writeLatency</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>223</C>
+     <C>226</C>
      <Name>writeWaitStates</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>224</C>
+     <C>227</C>
      <Name>writeWaitTime</Name>
      <Value>0</Value>
     </SOPCInterfaceParameter>
     <SOPCPort>
-     <C>225</C>
+     <C>228</C>
      <Direction>Input</Direction>
      <Role>read</Role>
      <Width>1</Width>
     </SOPCPort>
     <SOPCPort>
-     <C>226</C>
+     <C>229</C>
      <Direction>Input</Direction>
      <Role>write</Role>
      <Width>1</Width>
     </SOPCPort>
     <SOPCPort>
-     <C>227</C>
+     <C>230</C>
      <Direction>Input</Direction>
      <Role>chipselect</Role>
      <Width>1</Width>
     </SOPCPort>
     <SOPCPort>
-     <C>228</C>
+     <C>231</C>
      <Direction>Input</Direction>
      <Role>address</Role>
      <Width>5</Width>
     </SOPCPort>
     <SOPCPort>
-     <C>229</C>
+     <C>232</C>
      <Direction>Output</Direction>
      <Role>readdata</Role>
      <Width>16</Width>
     </SOPCPort>
     <SOPCPort>
-     <C>230</C>
+     <C>233</C>
      <Direction>Input</Direction>
      <Role>writedata</Role>
      <Width>16</Width>
     </SOPCPort>
    </SOPCInterface>
    <SOPCInterface>
-    <C>231</C>
+    <C>234</C>
     <InterfaceType>conduit_end</InterfaceType>
     <SOPCInterfaceParameter>
-     <C>232</C>
+     <C>235</C>
      <Name>associatedClock</Name>
      <Value>clock</Value>
     </SOPCInterfaceParameter>
     <SOPCInterfaceParameter>
-     <C>233</C>
+     <C>236</C>
      <Name>associatedReset</Name>
      <Value></Value>
     </SOPCInterfaceParameter>
     <SOPCPort>
-     <C>234</C>
+     <C>237</C>
      <Direction>Output</Direction>
      <Role>export</Role>
      <Width>16</Width>
@@ -1189,75 +1203,75 @@
    </SOPCInterface>
   </SOPCModule>
   <SOPCModule>
-   <C>235</C>
+   <C>238</C>
    <ModuleType>altera_avalon_jtag_uart</ModuleType>
    <SOPCModuleParameter>
-    <C>236</C>
+    <C>239</C>
     <Name>allowMultipleConnections</Name>
     <Value>false</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>237</C>
+    <C>240</C>
     <Name>avalonSpec</Name>
     <Value>1.0</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>238</C>
+    <C>241</C>
     <Name>hubInstanceID</Name>
     <Value>0</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>239</C>
+    <C>242</C>
     <Name>legacySignalAllow</Name>
     <Value>true</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>240</C>
+    <C>243</C>
     <Name>readBufferDepth</Name>
     <Value>64</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>241</C>
+    <C>244</C>
     <Name>readIRQThreshold</Name>
     <Value>8</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>242</C>
+    <C>245</C>
     <Name>simInputCharacterStream</Name>
     <Value></Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>243</C>
+    <C>246</C>
     <Name>simInteractiveOptions</Name>
     <Value>INTERACTIVE_ASCII_OUTPUT</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>244</C>
+    <C>247</C>
     <Name>useRegistersForReadBuffer</Name>
     <Value>false</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>245</C>
+    <C>248</C>
     <Name>useRegistersForWriteBuffer</Name>
     <Value>false</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>246</C>
+    <C>249</C>
     <Name>useRelativePathForSimFile</Name>
     <Value>false</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>247</C>
+    <C>250</C>
     <Name>writeBufferDepth</Name>
     <Value>64</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
-    <C>248</C>
+    <C>251</C>
     <Name>writeIRQThreshold</Name>
     <Value>8</Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>1950847925</SystemID>
+  <SystemID>1975593709</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2011-12-20</SchemaVersion>
 </ProgramExecution>
